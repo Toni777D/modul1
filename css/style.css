@@ -1,7 +1,23 @@
-body {
-  font-family: "Montserrat", sans-serif;
+* {
   padding: 0;
   margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
 }
 a {
   text-decoration: none;
@@ -9,6 +25,16 @@ a {
 ul,
 ol {
   list-style: none;
+}
+.container {
+  width: 100%;
+  max-width: 1166px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+.link {
+  text-decoration: none;
 }
 .visually-hidden {
   position: absolute;
@@ -21,15 +47,38 @@ ol {
   overflow: hidden;
 }
 /* -------------header------------ */
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+.header-container {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
 .header-logo {
   color: #111;
   font-size: 18px;
   font-weight: 700;
   line-height: calc(20 / 18);
   letter-spacing: calc(-0.03em / 18);
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 .header-logo-italic {
   font-style: italic;
+  margin-right: 5px;
+}
+.header-menu-list {
+  display: flex;
+  gap: 24px;
 }
 .header-menu-link {
   color: #111;
@@ -44,13 +93,22 @@ ol {
 .header-menu-link:focus {
   color: #fd9222;
 }
+.header-soc-list {
+  display: flex;
+  gap: 14px;
+}
 
 /* --------------------------- */
 
 /* ------------hero------------ */
 .hero {
   border-radius: 30px;
-  background: rgba(17, 17, 17, 0.6);
+  padding-bottom: 80px;
+}
+.hero-container {
+  background-color: rgba(17, 17, 17, 0.6);
+  border-radius: 30px;
+  padding: 380px 40px 40px 40px;
 }
 .hero-title {
   color: #fff;
@@ -58,6 +116,12 @@ ol {
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  margin-bottom: 32px;
+  max-width: 484px;
+}
+.hero-button {
+  display: flex;
+  align-items: center;
 }
 .hero-buy-btn {
   color: #fff;
@@ -67,6 +131,11 @@ ol {
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  border-radius: 100px;
+  background: #fd9222;
+  border: none;
+  padding: 14px 40px;
+  margin-right: 14px;
 }
 .hero-made-btn {
   color: #fff;
@@ -74,6 +143,10 @@ ol {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  padding: 14px 40px;
+  background-color: transparent;
 }
 .hero-down-btn {
   color: #fff;
@@ -81,6 +154,7 @@ ol {
   font-weight: 500;
   line-height: 1.28;
   letter-spacing: -0.03em;
+  margin-left: auto;
 }
 
 /* ------------------------ */
@@ -89,17 +163,25 @@ ol {
 
 .features {
   background: #1e1823;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .features-list {
+  display: flex;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .features-item {
+  width: calc((100% - 88px * 2) / 3);
 }
 .features-item-title {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 18px;
 }
 .features-item-text {
   color: rgba(255, 255, 255, 0.7);
@@ -113,6 +195,7 @@ ol {
 
 /* ------------taste------------ */
 .taste {
+  padding-top: 120px;
 }
 .taste-title {
   color: #111;
@@ -122,6 +205,8 @@ ol {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  max-width: 412px;
+  margin: 0 auto 28px;
 }
 .taste-title span {
   color: #fd9222;
@@ -130,15 +215,26 @@ ol {
   color: #111;
   text-align: center;
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  margin: 0 auto 50px;
+  max-width: 486px;
 }
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
 }
 .taste-item {
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+  background: #fff;
+  width: calc ((100% - 32px * 3) / 4);
+  padding: 28px 23px;
 }
 .taste-img {
+  margin: 0 auto;
+  margin-bottom: 36px;
 }
 .taste-subtitle {
   color: #111;
@@ -146,12 +242,14 @@ ol {
   font-weight: 600;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  padding-left: 5px;
 }
 /* ----------------------------- */
 
 /* ------------made------------ */
 
 .made {
+  padding-top: 120px;
 }
 .made-title {
   color: #111;
@@ -161,9 +259,18 @@ ol {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 .made-title span {
   color: #fd9222;
+}
+.made-wrap {
+  display: flex;
+  gap: 20px;
+}
+.made-content {
+  background-color: #fff;
+  padding: 32px;
 }
 .made-img {
 }
@@ -172,10 +279,12 @@ ol {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 28px;
 }
 .made-list {
 }
 .made-item {
+  margin-top: 24px;
 }
 .made-text {
   color: #111;
