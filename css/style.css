@@ -28,6 +28,7 @@ ol {
 }
 .container {
   width: 100%;
+  /* max-width: 365px; */
   max-width: 1166px;
   padding-right: 15px;
   padding-left: 15px;
@@ -46,6 +47,7 @@ ol {
   white-space: nowrap;
   overflow: hidden;
 }
+
 /* -------------header------------ */
 .header {
   padding-top: 24px;
@@ -97,7 +99,6 @@ ol {
   display: flex;
   gap: 14px;
 }
-
 /* --------------------------- */
 
 /* ------------hero------------ */
@@ -156,11 +157,9 @@ ol {
   letter-spacing: -0.03em;
   margin-left: auto;
 }
-
 /* ------------------------ */
 
 /* ------------features------------ */
-
 .features {
   background: #1e1823;
   padding-bottom: 50px;
@@ -190,7 +189,6 @@ ol {
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
-
 /* -------------------------------- */
 
 /* ------------taste------------ */
@@ -247,7 +245,6 @@ ol {
 /* ----------------------------- */
 
 /* ------------made------------ */
-
 .made {
   padding-top: 120px;
 }
@@ -293,11 +290,12 @@ ol {
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
-
 /* ----------------------------- */
 
 /* ------------products------------ */
 .products {
+  /* padding-top: 120px; */
+  padding-top: 80px;
 }
 .products-title {
   color: #111;
@@ -307,30 +305,47 @@ ol {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  /* margin-bottom: 50px; */
+  margin-bottom: 22px;
 }
 .products-title span {
   color: #fd9222;
 }
 .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 24px 18px; */
+  gap: 22px;
 }
 .products-item {
+  /* width: calc((100% - 54px) / 4); */
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  padding: 32px 20px;
+  background: #fff;
 }
 .products-img {
+  margin-bottom: 8px;
+  margin: 0 auto;
 }
 .products-subtitle {
   color: #111;
+  text-align: center;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  margin-bottom: 2px;
 }
 .products-text {
   color: rgba(17, 17, 17, 0.7);
   font-size: 12px;
-  font-weight: 400;
   line-height: 1.17;
   letter-spacing: -0.02em;
+  margin-bottom: 18px;
+  text-align: center;
 }
 .products-btn {
   font-family: inherit;
@@ -339,12 +354,12 @@ ol {
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
-
 /* ----------------------------- */
 
 /* ------------sellers------------ */
-
 .sellers {
 }
 .sellers-title {
@@ -372,11 +387,9 @@ ol {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
-
 /* ----------------------------- */
 
 /* ------------loved------------ */
-
 .loved {
 }
 .loved-title {
@@ -418,7 +431,6 @@ ol {
   line-height: normal;
   cursor: pointer;
 }
-
 /* ----------------------------- */
 
 /* ------------footer------------ */
